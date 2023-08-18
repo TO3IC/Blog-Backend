@@ -16,6 +16,9 @@ const app = express();
 
 app.use("/blogs", blog)
 
+app.get('/status', (req, res) => {
+   res.send({message: "Up and running"}) 
+});
 module.exports = {
     testDB,
     blogs
