@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ limit: "500kb", extended: false }));
 
 const port = process.env.PORT || 4500
 
-const uri = "mongodb+srv://TOXIC:TOXIC@cluster0.k6bz7qz.mongodb.net/?retryWrites=true&w=majority"
+const uri = process.env.APIKEY
 
 const client = new MongoClient(uri, {
     serverApi: {
