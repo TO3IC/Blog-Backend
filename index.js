@@ -34,5 +34,5 @@ app.get('/', async (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`[server]: Hello Toxic, I'm your server running on http://localhost:${port}`)
+    console.log(`[server]: Hello, I'm your server running on http://localhost:${port}`)
 })
