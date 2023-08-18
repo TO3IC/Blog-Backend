@@ -31,8 +31,6 @@ app.get('/', async (req, res) => {
     res.end("Use /api/blogs")
 })
 
-
-
 app.listen(port, () => {
     console.log(`[server]: Hello, I'm your server running on http://localhost:${port}`)
 })
